@@ -63,6 +63,7 @@ class ViewController: UIViewController {
         let keyboardScreenEndFrame = keyboardValue.cgRectValue
         let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
 
+     
         if notification.name == UIResponder.keyboardWillHideNotification {
             secret.contentInset = .zero
         } else {
@@ -89,6 +90,7 @@ class ViewController: UIViewController {
         secret.resignFirstResponder()
         secret.isHidden = true
         title = "Nothing to see here"
+        
     }
     
 }
